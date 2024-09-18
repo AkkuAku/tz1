@@ -1,24 +1,29 @@
 .advantages-section {
     padding: 50px 0;
     /* text-align: left; */
+    text-align: left;
   }
   
   .advantages-container {
     display: flex;
     align-items: center;
     margin-left: 200px;
+    text-align: left;
   }
   
   .advantages-text {
     max-width: 600px;
+    text-align: left;
   }
   
   h2 {
+    left: 50px;
     font-size: 2.5em;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
   
   .advantages-text p {
+    text-align: left;
     font-size: 1.2em;
     margin-bottom: 20px;
   }

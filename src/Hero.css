@@ -1,13 +1,13 @@
 .hero {
     height: 90vh;
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     display: flex;
-    justify-content: flex-start; 
+    /* justify-content: flex-start;  */
     align-items: center;
     padding: 20px 40px; 
     color: white;
-    position: relative;
+    /* position: relative; */
   }
   
   h1 {
@@ -31,6 +31,8 @@
     cursor: pointer;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    left: 100px; 
+    z-index: 10;  
     
   }
   

@@ -2,6 +2,7 @@ import React from 'react';
 import './ClientsSection.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import logo from './logo.svg';
 
 function ClientsSection() {
   return (
@@ -19,6 +20,7 @@ function ClientsSection() {
 
       <div className="contacts-wrapper">
         <div className="contacts-section">
+        <img src={logo} alt="Company Logo" className="company-logo" />
           <div className="service-info">
             <h3>Услуги</h3>
             <p>Вывоз и сортировка со</p>
@@ -33,12 +35,13 @@ function ClientsSection() {
               <FontAwesomeIcon icon={faEnvelope} /> qurmet.pro@mail.ru
             </p>
             
-            <p>
-              <FontAwesomeIcon icon={faPhone} /> +7 (777) 770-70-70, +7 (771) 771-77-77
-            </p>
             
           </div>
+          <p>
+              <FontAwesomeIcon icon={faPhone} /> +7 (777) 770-70-70, +7 (771) 771-77-77
+            </p>
         </div>
+        
       </div>
      
       <div className="design-credits">ABC DESIGN</div>
