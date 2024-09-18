@@ -1,0 +1,56 @@
+.services-container {
+  display: flex; 
+  justify-content: space-between; 
+  gap: 10px;
+  flex-wrap: nowrap; 
+}
+
+.service-card {
+  width: 30%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.service-card img {
+  width: 90%; 
+  height: 350px; 
+  object-fit: cover;
+}
+
+
+.service-card h3 {
+  margin-top: 10px;
+}
+h2{
+  text-align: left;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  margin-left: 50px;
+  font-weight: bold;
+}
+.service-card button {
+  background-color: #6a776e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 10px;
+  align-self: flex-start;
+}
+
+.service-card button:hover {
+  background-color: #218838;
+}
+
+
+.service-card::after {
+  content: "↗"; 
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #28a745;
+}
+

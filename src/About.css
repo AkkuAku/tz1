@@ -1,0 +1,88 @@
+.about-section {
+    padding: 50px 0;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+  }
+  
+ 
+  .about-image {
+    width: 100%;
+    max-width: 550px;
+    height: 300px; 
+    background-size: cover;
+    background-position: center;
+    margin-left: 150px;
+
+  }
+  
+  .about-content {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .about-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    
+  }
+  
+  .about-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .about-content button {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .stat {
+    text-align: center;
+    position: relative;
+  }
+  
+  .stat h3 {
+    font-size: 3.5em;
+    color: #28a745;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .stat::before {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(200, 200, 200, 0.2); 
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
+  
+  .stat p {
+    font-size: 1.2em;
+    color: #333;
+    position: relative;
+    z-index: 1;
+  }
+  
