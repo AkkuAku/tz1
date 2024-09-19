@@ -1,0 +1,355 @@
+/* Contents of index.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Contents of App.css */
+.App {
+  text-align: center;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Contents of About.css */
+.about-section {
+  padding: 50px 0;
+}
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.about-image {
+  width: 100%;
+  max-width: 550px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin-left: 150px;
+}
+.about-content {
+  max-width: 600px;
+  text-align: left;
+}
+.about-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+.about-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.about-content button {
+  background-color: #28a745;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+.stat {
+  text-align: center;
+  position: relative;
+}
+.stat h3 {
+  font-size: 3.5em;
+  color: #28a745;
+  position: relative;
+  z-index: 1;
+}
+.stat::before {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(200, 200, 200, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.stat p {
+  font-size: 1.2em;
+  color: #333;
+  position: relative;
+  z-index: 1;
+}
+
+/* Contents of Advantages.css */
+.advantages-section {
+  padding: 50px 0;
+  text-align: left;
+}
+.advantages-container {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+  text-align: left;
+}
+.advantages-text {
+  max-width: 600px;
+  text-align: left;
+}
+h2 {
+  left: 50px;
+  font-size: 2.5em;
+}
+.advantages-text p {
+  text-align: left;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.advantages-image img {
+  max-width: 600px;
+  width: 200%;
+  height: auto;
+}
+
+/* Contents of Benefits.css */
+.benefits-section {
+  padding: 50px 0;
+  background-color: #2d8534;
+  text-align: center;
+  color: white;
+}
+.benefits-section h2 {
+  text-align: left;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  margin-left: 50px;
+  font-weight: bold;
+}
+.benefits-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 50px;
+}
+.benefit-card {
+  background-color: #f4f4f4;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  width: 22%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+.benefit-card svg {
+  color: #28a745;
+  margin-bottom: 20px;
+}
+.benefit-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.benefit-card p {
+  font-size: 1.1em;
+  margin-top: 0;
+}
+
+/* Contents of ClientsSection.css */
+.clients-section {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+.clients-title {
+  text-align: left;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  margin-left: 50px;
+  font-weight: bold;
+}
+.clients-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+.client-logo {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contacts-wrapper {
+  background-color: #333;
+  padding: 40px 0;
+  color: white;
+}
+.contacts-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.company-logo {
+  width: 150px;
+  height: auto;
+}
+.service-info, .contact-info {
+  width: 25%;
+  text-align: left;
+}
+.phone-info {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+}
+.contact-info p svg {
+  margin-right: 10px;
+  color: #28a745;
+}
+.design-credits {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #777;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+/* Contents of Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+  z-index: 1000;
+}
+.header .logo img {
+  width: 120px;
+}
+.nav ul {
+  display: flex;
+  gap: 80px;
+}
+.nav ul li {
+  color: white;
+  font-size: 18px;
+}
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.language {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: white;
+}
+
+/* Contents of Hero.css */
+.hero {
+  height: 90vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  color: white;
+}
+.hero h1 {
+  font-size: 4em;
+  margin: 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+.hero p {
+  font-size: 1.5em;
+  margin: 20px 0;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+.hero button {
+  background-color: #28a745;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Contents of Services.css */
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.service-card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service-card img {
+  width: 90%;
+  height: 350px;
+  object-fit: cover;
+}
+.service-card button {
+  background-color: #6a776e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 10px;
+}
+.service-card button:hover {
+  background-color: #218838;
+}
